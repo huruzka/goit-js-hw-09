@@ -82,4 +82,3 @@ console.log(galleryMarkUp);
 
 
 
-
