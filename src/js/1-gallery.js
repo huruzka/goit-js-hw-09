@@ -77,8 +77,15 @@ const imageItem = images
     .join("");
   
 galleryMarkUp.insertAdjacentHTML("beforeend", imageItem);
-console.log(galleryMarkUp);
 
 
+// Ініціалізація SimpleLightbox
+const lightbox = new SimpleLightbox('.gallery a', {
+    captions: true,               // Увімкнути підписи
+    captionsData: 'alt',          // Джерело підпису — атрибут alt
+    captionPosition: 'bottom',    // Розташування підпису знизу
+    captionDelay: 250             // Затримка показу підпису — 250 мс
+});
+  
 
-
+lightbox.refresh();
