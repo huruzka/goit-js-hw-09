@@ -32,3 +32,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+  width: 1128px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+img {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
